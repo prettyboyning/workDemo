@@ -245,8 +245,7 @@
 				TargetAttributes = {
 					3B818E9E1F98C9F7008EE056 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6Z7R35XYS9;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3B818EB71F98C9F8008EE056 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -559,11 +558,14 @@
 			baseConfigurationReference = 8D42C4D3EA137C805C126E27 /* Pods-WorkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Z7R35XYS9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WorkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nlj.WorkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -572,11 +574,14 @@
 			baseConfigurationReference = 28E0DA80CE91DB6F8C8EBDC0 /* Pods-WorkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6Z7R35XYS9;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WorkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nlj.WorkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -651,6 +656,7 @@
 				3B818ECE1F98C9F8008EE056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B818ECF1F98C9F8008EE056 /* Build configuration list for PBXNativeTarget "WorkDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +665,7 @@
 				3B818ED11F98C9F8008EE056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B818ED21F98C9F8008EE056 /* Build configuration list for PBXNativeTarget "WorkDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +674,7 @@
 				3B818ED41F98C9F8008EE056 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
