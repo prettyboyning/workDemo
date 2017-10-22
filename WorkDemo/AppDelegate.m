@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "XNYYTextViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    XNYYTextViewController *textVC = [[XNYYTextViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:textVC];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];//初始化window
+    self.window.backgroundColor = [UIColor whiteColor];//设置window的背景色
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible]; //把window设置为主视图
+    
     return YES;
 }
 
